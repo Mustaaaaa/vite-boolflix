@@ -22,7 +22,7 @@ export default {
         params: {
           api_key: 'd395d14d3880da643f4fd372aabbbd48',
           query: searchQuery
-        }
+        },
       })
         .then(res => {
           this.movies = res.data.results.map(movie => ({

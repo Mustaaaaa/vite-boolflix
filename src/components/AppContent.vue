@@ -52,7 +52,7 @@ export default {
             vote_average: serie.vote_average,
             overview: serie.overview,
             image_url: serie.poster_path ? `https://image.tmdb.org/t/p/w200${serie.poster_path}` : '',
-            type: 'tv'
+            type: 'Series'
           }));
         })
     },

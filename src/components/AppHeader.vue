@@ -38,43 +38,67 @@ export default {
 </script>
 
 <style lang="scss">
-.header-bar{
-    margin: 20px 20px 40px 20px;
+.header-bar {
+    padding: 20px 20px 40px 20px;
     align-items: center;
-    .logo{
+    background-color: rgb(26, 25, 25);
+
+    .logo {
         margin-right: 40px;
         color: red
-    };
-    .vision-option{
+    }
+    .vision-option {
         display: flex;
         align-items: center;
-        a{
+
+        a {
             text-decoration: none;
             color: white;
+            padding: 10px;
         }
-        .gap-15{
-            gap: 25px;
+
+        a:hover {
+            background-color: #464646;
+            border-radius: 5px;
         }
-    };
+
+        .gap-15 {
+            gap: 15px;
+        }
+    }
+
+    ;
 }
+
 .search-bar {
-    input{
+    input {
         border: none;
         width: 350px;
         line-height: 30px;
         margin: 0 10px;
+        padding: 0 10px;
         color: white;
+        border-radius: 5px;
+        background-color: rgb(26, 25, 25);
     }
-    button{
+
+    input:hover {
+        background-color: #464646;
+        border-radius: 5px;
+    }
+
+    button {
         color: white;
         border: none;
         cursor: pointer;
         height: 35px;
         width: 80px;
         border-radius: 5px;
+        background-color: rgb(26, 25, 25);
     }
+
     button:hover {
-    background-color: #464646;
-}
+        background-color: #464646;
+    }
 }
 </style>

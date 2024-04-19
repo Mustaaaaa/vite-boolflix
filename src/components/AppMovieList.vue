@@ -2,7 +2,7 @@
     <div class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-4" v-for="movie in movies">
+                <div class="col-4 col-md-6" v-for="movie in movies">
                     <div class="movie-item">
                         <div class="image-container">
                             <img :src="movie.image_url" alt="" class="movie-image">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" v-for="serie in series">
+                <div class="col-4 col-md-6" v-for="serie in series">
                     <div class="movie-item">
                         <div class="image-container">
                             <img :src="serie.image_url" alt="" class="movie-image">
@@ -70,6 +70,8 @@ export default {
 
 <style lang="scss">
 .main-content {
+    display: flex;
+    justify-content: center;
     background-color: rgb(26, 25, 25);
 }
 
@@ -126,6 +128,4 @@ export default {
         }
     }
 }
-
-;
 </style>

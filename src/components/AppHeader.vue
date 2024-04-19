@@ -4,14 +4,14 @@
             <div class="logo">
                 <h1>BOOLFLIX</h1>
             </div>
-            <div class="vision-option">
+            <div class="vision-option display-none">
                 <ul class="row gap-15">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Serie TV</a></li>
-                    <li><a href="#">Film</a></li>
-                    <li><a href="#">Originali</a></li>
-                    <li><a href="#">Aggiunti di recente</a></li>
-                    <li><a href="#">La mia lista</a></li>
+                    <li class="display-none-md"><a href="#">Home</a></li>
+                    <li class="display-none-md"><a href="#">Serie TV</a></li>
+                    <li class="display-none-md"><a href="#">Film</a></li>
+                    <li class="display-none-md"><a href="#">Originali</a></li>
+                    <li class="display-none-md"><a href="#">Aggiunti di recente</a></li>
+                    <li class="display-none-md"><a href="#">La mia lista</a></li>
                 </ul>
             </div>
         </div>
@@ -47,6 +47,7 @@ export default {
         margin-right: 40px;
         color: red
     }
+
     .vision-option {
         display: flex;
         align-items: center;
@@ -66,9 +67,9 @@ export default {
             gap: 15px;
         }
     }
-
-    ;
 }
+
+
 
 .search-bar {
     input {
@@ -99,6 +100,16 @@ export default {
 
     button:hover {
         background-color: #464646;
+    }
+}
+
+@media (max-width: 1277px) {
+    .display-none-md {
+        display: none;
+    }
+    .header-bar{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 </style>
